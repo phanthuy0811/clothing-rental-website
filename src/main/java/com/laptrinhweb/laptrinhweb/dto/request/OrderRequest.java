@@ -1,0 +1,22 @@
+package com.laptrinhweb.laptrinhweb.dto.request;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.time.LocalDate;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+public class OrderRequest {
+    private Long productId;
+    private String size;
+    private int quantity;
+    private LocalDate startDate;
+    private LocalDate endDate;
+    private String phone;
+    private String address;
+}
