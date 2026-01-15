@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="sanpham.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="/user/home/home.html">
+                <img src="/admin/Logo.png" alt="Logo">
+            </a>
+        </div>
+
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" placeholder="Tìm kiếm...">
+                <i class="fas fa-search"></i>
+            </div>
+            <button class="search-btn">Tìm kiếm</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li><a href="/admin/dashboad/dashboad.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="/admin/user/user.html"><i class="fas fa-users"></i> Người dùng</a></li>
+                <li><a href="/admin/lichsu/lichsu.html"><i class="fas fa-receipt"></i> Đơn hàng</a></li>
+                <li><a href="/admin/danhmuc/danhmuc.html"><i class="fas fa-list"></i> Danh mục</a></li>
+                <li><a href="/admin/sanpham/sanpham.html"><i class="fas fa-box"></i> Sản phẩm</a></li>
+                <li><a href="/admin/chitiet/chitiet.html"><i class="fas fa-info-circle"></i> Chi tiết</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">  
+            <div class="table-container">
+                <!-- <a href="/admin/themsanpham/themsanpham.html"> -->
+                    <button class="add-btn" id="openModalBtn">Thêm</button>
+                <!-- </a> -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Tên sản phẩm</th>
+                            <th>Mẫu sản phẩm</th>
+                            <th>Giá thuê</th>
+                            <th>Số lượng</th>
+                            <th>Ảnh</th>
+                            <th>Hành động</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="productTableBody">
+
+                    </tbody>
+
+                </table>
+            </div>
+            <div class="pagination"></div>
+        </div>
+    </div>
+
+    <!-- Modal thêm sản phẩm -->
+    <div id="addProductModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <form id="addProductForm">
+                <label for="name">Tên sản phẩm</label>
+                <input class="product" type="text" id="name" name="name" required>
+
+                <label for="sample">Danh mục:</label>
+                <select id="sample" name="sample" class="product">
+                    <option value="">Chọn danh mục</option>
+                </select>
+
+
+                <label for="price">Giá</label>
+                <input class="product" type="number" id="price" name="price" required>
+
+                <label for="image">Ảnh</label>
+                <input class="product" type="file" id="image" name="image" required>
+
+                <button type="submit" class="add-btn">Thêm sản phẩm</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div id="editProductModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <form id="editProductForm">
+                <label for="editName">Tên sản phẩm</label>
+                <input class="product" type="text" id="editName" name="name" required>
+    
+                <label for="editSample">Danh mục:</label>
+                <select id="editSample" name="sample" class="product">
+                    <option value="">Chọn danh mục</option>
+                </select>
+    
+                <label for="editPrice">Giá</label>
+                <input class="product" type="number" id="editPrice" name="price" required>
+    
+                <label for="editImage">Ảnh</label>
+                <input class="product" type="file" id="editImage" name="image">
+    
+                <button type="submit" class="add-btn">Lưu</button>
+            </form>
+        </div>
+    </div>
+
+    
+    <script type="module" src="sanpham.js"></script>
+</body>
+</html>

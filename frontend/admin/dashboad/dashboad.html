@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="dashboad.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="/user/home/home.html">
+                <img src="/admin/logo.png" alt="Logo">
+            </a>
+        </div>
+
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" placeholder="Tìm kiếm...">
+                <i class="fas fa-search"></i>
+            </div>
+            <button class="search-btn">Tìm kiếm</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li><a href="/admin/dashboad/dashboad.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="/admin/user/user.html"><i class="fas fa-users"></i> Người dùng</a></li>
+                <li><a href="/admin/lichsu/lichsu.html"><i class="fas fa-receipt"></i> Đơn hàng</a></li>
+                <li><a href="/admin/danhmuc/danhmuc.html"><i class="fas fa-list"></i> Danh mục</a></li>
+                <li><a href="/admin/sanpham/sanpham.html"><i class="fas fa-box"></i> Sản phẩm</a></li>
+                <li><a href="/admin/chitiet/chitiet.html"><i class="fas fa-info-circle"></i> Chi tiết</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div class="card">
+                <canvas id="revenueChart" class="revenueChart"></canvas>
+            </div>
+            <!-- <div class="card">  
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tháng</th>
+                            <th>Doanh thu (VND)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Tháng 1</td><td>50,000,000</td></tr>
+                        <tr><td>Tháng 2</td><td>70,000,000</td></tr>
+                        <tr><td>Tháng 3</td><td>90,000,000</td></tr>
+                    </tbody>
+                </table>
+            </div> -->
+        </div>
+    </div>
+
+    <script type="module" src="dashboad.js"></script>
+</body>
+</html>

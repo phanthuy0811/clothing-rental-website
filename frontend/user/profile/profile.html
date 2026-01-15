@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Store</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="/user/auth.css">
+    <!-- link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> -->
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <a href="/user/home/home.html">
+                <img src="/user/logo.png" alt="Logo">
+            </a>
+        </div>
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" placeholder="Tìm kiếm...">
+                <i class="fas fa-search"></i>
+            </div>
+            <button class="search-btn">Tìm kiếm</button>
+        </div>
+        
+       <!-- Thay đổi phần user icon -->
+        <div class="icons">
+            <a href="/user/profile/profile.html">
+                <img id="user-avatar" src="/user/user.png" alt="User Avatar" class="user-icon">
+            </a>
+            <a href="/user/giohang/giohang.html">
+                <img id="cart-avatar" src="/user/cart.jpg" alt="Cart Avatar" class="cart-icon">
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li><a href="/user/profile/profile.html">Hồ sơ</a></li>
+                <li><a href="/user/lichsu/lichsu.html">Đơn hàng</a></li>
+                <li><a href="/user/vi/vi.html">Ví</a></li>
+            </ul>
+        </div>
+
+        <section class="profile">
+            <form id="updateProfileForm" class="profile-card" method="post" enctype="multipart/form-data">
+                <div class="avatar-container">
+                    <img src="/user/user.png" alt="Avatar" class="avatar">
+                    <input type="file" id="image" name="image">
+                </div>
+                <div class="form-group">
+                    <label for="userName">Tên đăng nhập:</label>
+                    <input type="text" id="userName" name="userName" value="user1" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="fullName">Họ và tên:</label>
+                    <input type="text" id="fullName" name="fullName" value="client">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" value="user@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Số điện thoại</label>
+                    <input type="tel" id="phone" name="phone" value="0123456789" pattern="[0-9]{10}" required>
+                </div>                
+               
+                <button type="submit" class="save-btn">Lưu</button>
+            </form>
+        </section>
+
+    </div>
+
+    <script type="module" src="profile.js"></script>
+    <script type="module" src="/user/auth.js"></script>
+</body>
+</html>

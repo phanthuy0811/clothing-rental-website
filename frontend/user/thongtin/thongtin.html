@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Store</title>
+    <link rel="stylesheet" href="thongtin.css">
+    <link rel="stylesheet" href="/user/auth.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <a href="/user/home/home.html">
+                <img src="/user/Logo.png" alt="Logo">
+            </a>
+        </div>
+       
+       <!-- Thay đổi phần user icon -->
+        <div class="icons">
+            <a href="/user/profile/profile.html">
+                <img id="user-avatar" src="/user/user.png" alt="User Avatar" class="user-icon">
+            </a>
+            <a href="/user/giohang/giohang.html">
+                <img id="cart-avatar" src="/user/cart.jpg" alt="Cart Avatar" class="cart-icon">
+            </a>
+        </div>
+
+    </header>
+
+    <div class="checkout-container">
+        <div class="checkout-box">
+            <h2>Thông tin giao hàng</h2>
+            <form>
+
+                <label for="phone">Số điện thoại</label>
+                <input type="text" id="phone" >
+
+                <label for="address">Địa chỉ</label>
+                <input type="text" id="address" >
+
+               <button class="deposit-btn" type="button">Đặt cọc</button>
+               <button class="later-btn" type="button">Thanh toán sau</button>
+
+            </form>
+        </div>
+    </div>
+
+
+    <div class="payment-modal-overlay" id="payment-modal">
+        <div class="payment-box">
+            <p><strong>Số dư tài khoản:</strong> <span id="soDu">Đang tải...</span></p>
+            <p><strong>Số tiền phải thanh toán:</strong> <span id="soTien">Đang tải...</span></p>
+
+            <div class="buttons">
+                <button id="pay-confirm" class="pay">Xác nhận thanh toán</button>  <!-- Thêm id này -->
+                <a href="/user/nap/nap.html">
+                    <button class="top-up">Nạp tiền</button>
+                </a>
+            </div>
+            <button id="modal-close" class="close-btn"></button> 
+    </div>
+
+    <script type="module" src="thongtin.js"></script>
+    <script type="module" src="/user/auth.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Store</title>
+    <link rel="stylesheet" href="giohang.css">
+    <link rel="stylesheet" href="/user/auth.css">
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="/user/home/home.html">
+                <img src="/user/Logo.png" alt="Logo">
+            </a>
+        </div>
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" placeholder="Tìm kiếm...">
+                <i class="fas fa-search"></i>
+            </div>
+            <button class="search-btn">Tìm kiếm</button>
+        </div>
+        <div class="icons">
+            <a href="/user/profile/profile.html">
+                <img id="user-avatar" src="/user/user.png" alt="Hồ sơ" class="user-icon">
+            </a>
+            <a href="/user/giohang/giohang.html">
+                <img id="cart-avatar" src="/user/cart.jpg" alt="Giỏ hàng" class="cart-icon">
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+        <main class="cart-container">
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th></th> <!-- Checkbox -->
+                        <th>Sản phẩm</th>
+                        <th>Size</th>
+                        <th>Giá</th>
+                        <th>Số lượng</th>
+                        <th>Hành động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>
+                            <div class="product-info">
+                                <img src="/user/images.jpg" alt="Sản phẩm 1">
+                                <span>Sản phẩm 1</span>
+                            </div>
+                        </td>
+                        <td>M</td>
+                        <td>xxx VND</td>
+                        <td>
+                            <button class="qty-btn">-</button>
+                            <input type="text" value="1" class="qty-input">
+                            <button class="qty-btn">+</button>
+                        </td>
+                        <td>
+                            <button class="delete-btn">Xóa</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>
+                            <div class="product-info">
+                                <img src="/user/images.jpg" alt="Sản phẩm 2">
+                                <span>Sản phẩm 2</span>
+                            </div>
+                        </td>
+                        <td>M</td>
+                        <td>xxx VND</td>
+                        <td>
+                            <button class="qty-btn">-</button>
+                            <input type="text" value="1" class="qty-input">
+                            <button class="qty-btn">+</button>
+                        </td>
+                        <td>
+                            <button class="delete-btn">Xóa</button>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </main>
+
+        <div class="rental-section">
+            <label for="start-date">Ngày bắt đầu thuê</label>
+            <input type="date" id="start-date">
+            
+            <label for="end-date">Ngày kết thúc thuê</label>
+            <input type="date" id="end-date">
+            <!-- <a href="/user/thanhtoan/thanhtoan.html"> -->
+                <button class="rent-btn">Thuê</button>
+            <!-- </a> -->
+        </div>
+        
+    </div>
+    
+    <script type="module" src="/user/auth.js"></script>
+
+    <script type="module" src="giohang.js"></script>
+</body>
+</html>

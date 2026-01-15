@@ -1,0 +1,117 @@
+/* Reset mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Điều chỉnh khoảng cách giữa các icon */
+    padding-right: 20px; /* Đẩy vào trong */
+
+}
+
+body {
+    background-color: #fff6fc;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.user-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.cart-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+
+.logo img {
+    height: 70px;
+}
+
+/* Main Content */
+main {
+    display: flex;
+    justify-content: center;
+    /* align-items: center;
+    height: 100vh; */
+    padding-top: 150px;
+}
+
+.payment-box {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 350px;
+    transition: transform 0.2s ease;
+}
+
+/* .payment-box:hover {
+    transform: translateY(-5px);
+} */
+
+.payment-box p {
+    margin: 15px 0;
+    font-size: 18px;
+    color: #333;
+    font-weight: 500;
+}
+
+.buttons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+button {
+    border: none;
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 140px;
+}
+
+.pay {
+    background-color: #007bff;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+.pay:hover {
+    background-color: #0056b3;
+}
+
+.top-up {
+    background-color: #28a745;
+    color: white;
+    box-shadow: 0 4px 8px rgba(40, 167, 69, 0.3);
+}
+
+.top-up:hover {
+    background-color: #1e7e34;
+}
