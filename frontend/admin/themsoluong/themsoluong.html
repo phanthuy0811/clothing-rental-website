@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Thêm sản phẩm</title>
+    <link rel="stylesheet" href="themsoluong.css">
+</head>
+<body>
+    <div class="header">
+        <img src="/admin/logo.png" alt="Logo">
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="/admin/user/user.html">Người dùng</a></li>
+                <li><a href="/admin/lichsu/lichsu.html">Lịch sử</a></li>
+                <li><a href="/admin/sanpham/sanpham.html">Sản phẩm</a></li>
+                <li><a href="/admin/chitiet/chitiet.html">Chi tiết</a></li>
+            </ul>
+        </div>
+
+        <!-- Nội dung chính -->
+        <div class="main-content">
+            <div class="form-container">
+                <form>
+                    <label for="size">Chọn Size</label>
+                    <select id="size" name="size">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+
+                    <label for="quantity">Số lượng</label>
+                    <input type="text" id="quantity" name="quantity">
+
+
+                    <button type="submit" class="add-btn">Thêm</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="themsoluong.js"></script>
+</body>
+</html>

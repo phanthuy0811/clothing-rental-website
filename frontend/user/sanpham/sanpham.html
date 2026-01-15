@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Store</title>
+    <link rel="stylesheet" href="sanpham.css">
+    <link rel="stylesheet" href="/user/auth.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <a href="/user/home/home.html">
+                <img src="/user/Logo.png" alt="Logo">
+            </a>
+        </div>
+        
+       <!-- Thay đổi phần user icon -->
+        <div class="icons">
+            <a href="/user/profile/profile.html">
+                <img id="user-avatar" src="/user/user.png" alt="User Avatar" class="user-icon">
+            </a>
+            <a href="/user/giohang/giohang.html">
+                <img id="cart-avatar" src="/user/cart.jpg" alt="Cart Avatar" class="cart-icon">
+            </a>
+        </div>
+
+    </header>
+
+    <div class="product-wrapper">
+            <div class="product-image" id = "image">
+                <img src="/user/banner.jpg" alt="Product Image">
+            </div>
+            <div class="product-details">
+                <h2 class="product-title" id ="title">Áo sơ mi nam cao cấp</h2>
+                <p class="product-price" id = "price"><strong>Giá thuê:</strong> 150,000 VND/ngày</p>
+                <p class="label"><strong>Kích thước:</strong></p>
+                <!-- <div class="size-options">
+                    <button>S</button>
+                    <button>M</button>
+                    <button>L</button>
+                    <button>XL</button>
+                </div> -->
+                <div class="size-options">
+                    <button>S <span id="size-s-count"></span></button>
+                    <button>M <span id="size-m-count"></span></button>
+                    <button>L <span id="size-l-count"></span></button>
+                    <button>XL <span id="size-xl-count"></span></button>
+                </div>
+                <p class="label"><strong>Số lượng:</strong></p>
+                <div class="quantity">
+                    <button class="btn-quantity">-</button>
+                    <input type="text" value="1">
+                    <button class="btn-quantity">+</button>
+                </div>
+                <p class="label"><strong>Ngày thuê:</strong></p>
+                <div class="date-selection">
+                    <input type="date"> <span>đến</span> <input type="date">
+                </div>
+                <div class="buttons">
+                    <!-- <a href="/user/giohang/giohang.html"> -->
+                        <button class="add-to-cart">Thêm vào giỏ hàng</button>
+                    <!-- </a> -->
+                    <!-- <a href="/user/thanhtoan/thanhtoan.html"> -->
+                        <button class="rent-now">Thuê ngay</button>
+                    <!-- </a> -->
+                </div>
+        </div>
+
+    </div>
+
+    
+
+    <section class="related-products">
+        <h2>Sản phẩm liên quan</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <a href="/user/sanpham/sanpham.html">
+                    <img src="/user/banner.jpg" alt="Sản phẩm 1">
+                </a>
+                <p>Sản phẩm 1</p>
+                <p>Giá thuê: xxx VND</p>
+            </div>
+            <div class="product-item">
+                <a href="/user/sanpham/sanpham.html">
+                    <img src="/user/banner.jpg" alt="Sản phẩm 2">
+                </a>
+                <p>Sản phẩm 1</p>
+                <p>Giá thuê: xxx VND</p>
+            </div>
+            <div class="product-item">
+                <a href="/user/sanpham/sanpham.html">
+                    <img src="/user/banner.jpg" alt="Sản phẩm 3">
+                </a>
+                <p>Sản phẩm 1</p>
+                <p>Giá thuê: xxx VND</p>
+            </div>
+            <div class="product-item">
+                <a href="/user/sanpham/sanpham.html">
+                    <img src="/user/banner.jpg" alt="Sản phẩm 4">
+                </a>
+                <p>Sản phẩm 1</p>
+                <p>Giá thuê: xxx VND</p>
+            </div>
+        </div>
+
+        <div class="pagination"></div>
+
+    </section>
+    
+
+    <script type="module" src="sanpham.js"></script>
+    <script type="module" src="/user/auth.js"></script>
+
+</body>
+</html>

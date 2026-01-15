@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Store</title>
+    <link rel="stylesheet" href="lichsu.css">
+    <link rel="stylesheet" href="/user/auth.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="/user/home/home.html">
+                <img src="/user/Logo.png" alt="Logo">
+            </a>
+        </div>
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" placeholder="Tìm kiếm...">
+                <i class="fas fa-search"></i>
+            </div>
+            <button class="search-btn">Tìm kiếm</button>
+        </div>
+        
+       <!-- Thay đổi phần user icon -->
+        <div class="icons">
+            <a href="profile.html">
+                <img id="user-avatar" src="/user/user.png" alt="User Avatar" class="user-icon">
+            </a>
+            <a href="giohang.html">
+                <img id="cart-avatar" src="/user/cart.jpg" alt="Cart Avatar" class="cart-icon">
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li><a href="/user/profile/profile.html">Hồ sơ</a></li>
+                <li><a href="/user/lichsu/lichsu.html">Đơn hàng</a></li>
+                <li><a href="/user/vi/vi.html">Ví</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <h2>Lịch sử đơn hàng</h2>
+            
+            <!-- Content will be loaded dynamically via JavaScript -->
+             <div id="pagination" class="pagination"></div>
+        </div>
+    </div>
+
+    <!-- Modal hiển thị khi click thanh toán -->
+    <div class="payment-modal-overlay" id="payment-modal">
+        <div class="payment-box">
+            <p><strong>Số dư tài khoản:</strong> <span id="soDu">Đang tải...</span></p>
+            <p><strong>Số tiền phải thanh toán:</strong> <span id="soTien">Đang tải...</span></p>
+
+            <div class="buttons">
+                <button id="pay-confirm" class="pay">Xác nhận thanh toán</button>
+                <!-- <a href="/user/nap/nap.html">
+                    <button class="top-up">Nạp tiền</button>
+                </a> -->
+            </div>
+            <button id="modal-close" class="close-btn">×</button>
+        </div>
+
+        
+    </div>
+
+
+    <script type="module" src="/user/auth.js"></script>
+    <script type="module" src="lichsu.js"></script>
+</body>
+</html>
